@@ -44,9 +44,13 @@
   padding-top: $navbar-brand-padding-y;
   padding-bottom: $navbar-brand-padding-y;
   margin-right: $navbar-padding-x;
-  font-size: $navbar-brand-font-size;
+  font-size: 2em;
   line-height: inherit;
   white-space: nowrap;
+
+  &:before{
+    color: #3cba54
+  }
 
   @include hover-focus {
     text-decoration: none;
@@ -68,7 +72,12 @@
   .nav-link {
     padding-right: 0;
     padding-left: 0;
+    text-transform: uppercase;
+    &:before{
+      margin-right: 3px;
+    }
   }
+  
 
   .dropdown-menu {
     position: static;
@@ -218,10 +227,10 @@
 
   .navbar-nav {
     .nav-link {
-      color: $navbar-light-color;
+      color: #000;
 
       @include hover-focus {
-        color: $navbar-light-hover-color;
+        color: #4885ed;
       }
 
       &.disabled {
